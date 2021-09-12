@@ -12,6 +12,13 @@
 ## Amazon EventBridge
 - Amazon EventBridge is a serverless event bus that makes it easier to build event-driven applications at scale using events 
 - generated from your applications, integrated Software-as-a-Service (SaaS) applications, and AWS services.
+- Event buses receive events from AWS services, SaaS services and applications, and custom applications. 
+- You define rules in your AWS account to process events. 
+- A rule watches for certain types of events, and routes them to one or more targets you have specified. The targets then perform some action based on the original event.
+- Amazon EventBridge is a serverless event bus to enable event publishing and rules based routing to the different destinations. 
+- Amazon EventBridge provides integration with custom applications, Software-as-a-Service (SaaS) applications, and AWS services. 
+- The routing rules can be based on facts like event source, AWS Service and also based on the content of the message.
+- 
 ## Amazon MQ
 - Amazon MQ is a managed message broker service for Apache ActiveMQ and RabbitMQ that makes it easy to set up and operate message brokers in the cloud, 
 - so you can migrate your messaging and applications without rewriting code.
