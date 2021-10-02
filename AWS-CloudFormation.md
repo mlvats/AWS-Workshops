@@ -1,6 +1,7 @@
 # What is CloudFormation
 
 - Link :  https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html
+- https://github.com/awslabs/aws-cloudformation-templates
 
      ![image](https://user-images.githubusercontent.com/32443900/135504534-614dbde4-6d78-4578-b798-cddfe66a82ee.png)
 
@@ -251,6 +252,7 @@ Properties:
 
 aws configure list
 aws configure list-profiles
+aws configure --profile moti
 
 ```
 
@@ -725,6 +727,54 @@ Eg. feat-blue--projectx.domain.com
 ![image](https://user-images.githubusercontent.com/32443900/135697205-60381067-dd0f-4b3c-9c41-40727af2dadd.png)
 
 ![image](https://user-images.githubusercontent.com/32443900/135697218-8e0f5ffb-35d1-4e30-9e79-d819dddb3aa4.png)
+
+### Using Custom Resources to Extend your CloudFormation
+- https://www.alexdebrie.com/posts/cloudformation-custom-resources/
+- AWS::CloudFormation::CustomResource - https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cfn-customresource.html
+- CloudFormation custom resource used for
+     - Provisioning AWS resources that are not supported by CloudFormation. examples IAM Role Tags, Daily backups for AWS ElastiCache    etc
+     - Provisioning non-AWS resources with CloudFormation. for on-prem, third party resources 
+     - Performing provisioning steps not related to infrastructure. The core example here is running relational database initialization or migration scripts
+     - Any. Thing. You. Want.
+  
+![image](https://user-images.githubusercontent.com/32443900/135697789-72ed7074-7b09-415f-b5b6-6cb077ff7a34.png)
+![image](https://user-images.githubusercontent.com/32443900/135697827-0f1fdb53-0513-41be-93c2-500b44c7cad0.png)
+![image](https://user-images.githubusercontent.com/32443900/135697868-73e43593-d5c2-41fd-8be6-8fbce0db6303.png)
+---
+## Hands on for Custom Resources
+
+![image](https://user-images.githubusercontent.com/32443900/135698009-62b74120-0ab9-47bc-bb3a-beff3e9a2cf5.png)
+
+![image](https://user-images.githubusercontent.com/32443900/135703686-0b46340a-3b16-4951-b3e7-9a0cb0edc93f.png)
+
+---
+
+## AWS CloudFormation Macros
+- Using AWS CloudFormation macros to perform custom processing on templates
+- Macros enable you to perform custom processing on templates, from simple actions like find-and-replace operations to extensive transformations of entire templates.
+
+![image](https://user-images.githubusercontent.com/32443900/135704256-ad256399-6a03-4f7c-a89a-1a9a8b0abbfa.png)
+
+
+
+![image](https://user-images.githubusercontent.com/32443900/135704326-ec1d72d8-7e76-4136-91db-2280d6479663.png)
+
+![image](https://user-images.githubusercontent.com/32443900/135704411-0bc10845-8fbc-4f79-b448-3a79009bf480.png)
+
+![image](https://user-images.githubusercontent.com/32443900/135704415-8910e00d-c8be-4b73-b059-917ae3a729cb.png)
+
+---
+### Working with nested stacks
+
+-  ![image](https://user-images.githubusercontent.com/32443900/135704629-572f9bc3-155d-47e6-95b1-f8092227e5d2.png)
+![image](https://user-images.githubusercontent.com/32443900/135704644-90aaae85-ac46-4cdc-a70e-b7c82ef6d1fb.png)
+
+
+
+
+
+-----------
+
 
 
 
