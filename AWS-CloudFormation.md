@@ -769,11 +769,21 @@ Eg. feat-blue--projectx.domain.com
 -  ![image](https://user-images.githubusercontent.com/32443900/135704629-572f9bc3-155d-47e6-95b1-f8092227e5d2.png)
 ![image](https://user-images.githubusercontent.com/32443900/135704644-90aaae85-ac46-4cdc-a70e-b7c82ef6d1fb.png)
 
-
-
-
-
 -----------
+
+## AWS Secrets Manager: 
+Link 
+- https://aws.amazon.com/blogs/aws/aws-secrets-manager-store-distribute-and-rotate-credentials-securely/
+- https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html
+- https://docs.amazonaws.cn/en_us/AWSCloudFormation/latest/UserGuide/dynamic-references.html
+- https://aws.amazon.com/secrets-manager/pricing/
+- SSM - now knwon as AWS Systems Manager Parameter Store
+
+![image](https://user-images.githubusercontent.com/32443900/135734396-5d710e21-de3c-4a09-940d-65929d94b1ed.png)
+
+![image](https://user-images.githubusercontent.com/32443900/135734437-1e00c2cf-fa63-4438-a5d7-18effe75907a.png)
+
+
 
 
 
