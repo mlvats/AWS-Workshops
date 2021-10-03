@@ -1,5 +1,7 @@
 # What is CloudFormation
 
+- Interactive Diagram -  https://lucid.app/lucidchart/f07d2df5-3d12-494f-b381-22d00fc59a9f/view?page=0
+- 
 - Link :  https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html
 - https://github.com/awslabs/aws-cloudformation-templates
 - https://github.com/ACloudGuru-Resources/course-mastering-aws-cloudformation
@@ -816,6 +818,52 @@ aws cloudformation deploy \
 PErmission is given through Roles. 
 
 ![image](https://user-images.githubusercontent.com/32443900/135735315-6de93863-4403-4308-9b5d-a8b5f801b320.png)
+
+![image](https://user-images.githubusercontent.com/32443900/135735722-278abd3f-28f4-40d5-a198-cbb1e7952cb4.png)
+
+![image](https://user-images.githubusercontent.com/32443900/135735745-3d21cf65-548d-48cb-9269-c80016fc4580.png)
+
+
+![image](https://user-images.githubusercontent.com/32443900/135735753-81b8e5e4-57a7-4209-8216-cde3a0520147.png)
+
+
+- https://docs.aws.amazon.com/cli/latest/reference/cloudformation/update-termination-protection.html
+- 
+![image](https://user-images.githubusercontent.com/32443900/135735781-6a53fa2e-36d9-4718-ace6-6a7efddcbbdf.png)
+
+### Stack policy to protect Stack sets from other changing it
+
+![image](https://user-images.githubusercontent.com/32443900/135735888-084acd07-5e40-41fc-ae5d-bcdc179c1978.png)
+
+
+![image](https://user-images.githubusercontent.com/32443900/135735898-13975ffd-2e18-4f02-88a7-d107b34f3dfa.png)
+
+
+
+# CloudFormation Frameworks
+
+![image](https://user-images.githubusercontent.com/32443900/135736021-2873440f-6c76-410c-9b3b-c116e93a8a45.png)
+
+
+- https://github.com/cloudtools/troposphere
+
+![image](https://user-images.githubusercontent.com/32443900/135736043-7ebbb90a-197f-4b60-adb1-cb151ead550d.png)
+
+![image](https://user-images.githubusercontent.com/32443900/135736055-f62fe28a-0aa6-42bd-a789-33aeebcbc1f5.png)
+
+link - https://github.com/aws/serverless-application-model
+
+![image](https://user-images.githubusercontent.com/32443900/135736068-3364d7f1-ebc7-4194-a608-00cb71958098.png)
+
+![image](https://user-images.githubusercontent.com/32443900/135736076-0902e9b6-db29-4573-8c4b-508d7aa4b19e.png)
+
+![image](https://user-images.githubusercontent.com/32443900/135736086-1a342f2e-3623-491a-a9b8-b70b77d3775f.png)
+
+![image](https://user-images.githubusercontent.com/32443900/135736093-ab4b8b21-44a0-4221-a1d8-c168e7ebdc7d.png)
+
+
+![image](https://user-images.githubusercontent.com/32443900/135736130-943633dd-0a57-4ae2-a272-ce6580053373.png)
+
 
 
 
