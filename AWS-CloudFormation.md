@@ -2,7 +2,7 @@
 
 - Link :  https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html
 - https://github.com/awslabs/aws-cloudformation-templates
-
+- https://github.com/ACloudGuru-Resources/course-mastering-aws-cloudformation
      ![image](https://user-images.githubusercontent.com/32443900/135504534-614dbde4-6d78-4578-b798-cddfe66a82ee.png)
 
 ## intrinsic functions:
@@ -782,6 +782,44 @@ Link
 ![image](https://user-images.githubusercontent.com/32443900/135734396-5d710e21-de3c-4a09-940d-65929d94b1ed.png)
 
 ![image](https://user-images.githubusercontent.com/32443900/135734437-1e00c2cf-fa63-4438-a5d7-18effe75907a.png)
+
+### Create SSM Param with encrypted JSON file as value
+```shell
+STACKNAME=acg-secrets
+REGION=us-east-1
+PROFILE=moti
+aws ssm put-parameter \
+    --name /acg/master-cfn/secrets \
+    --type SecureString \
+    --value "$(cat secrets.json)" \
+    --region $REGION \
+    --profile $PROFILE
+```
+
+### Deploy Secrets Example Template
+```shell
+aws cloudformation deploy \
+  --stack-name $STACKNAME \
+  --template-file template.yaml \
+  --capabilities CAPABILITY_NAMED_IAM \
+  --region $REGION \
+  --profile $PROFILE
+```
+
+---
+# Service Roles
+
+- Folks needs all sorts of roles to deply Stakcs.  For example, to deploy Lambda we need permission to deploy LAmbda service (admin)
+- 
+![image](https://user-images.githubusercontent.com/32443900/135735254-26601196-1043-482f-95ff-7a16a77103c9.png)
+
+PErmission is given through Roles. 
+
+![image](https://user-images.githubusercontent.com/32443900/135735315-6de93863-4403-4308-9b5d-a8b5f801b320.png)
+
+
+
+
 
 
 
