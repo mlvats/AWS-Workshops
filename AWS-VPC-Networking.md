@@ -85,6 +85,39 @@
 
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/32443900/135769751-2a54beed-8424-47d5-bc20-248617b3857c.png">
 
+## Lab 3 Application Availability and Scalability
+- Lets build a network load balanced, auto scaling group of EC2 instance built using a Launch Template. 
+- Using Network Load Balancer not only provides availablity and scalability to our application, 
+- but we can use it to share our application to other VPCs via AWS Privatelink.
+
+#### What you will build:
+
+- **Network Load Balancer** with an Auto Scaling group of EC2 Instance built from a template
+- **VPC Endpoint Service**: making the application available for other VPCs to consume
+- **VPC Endpoint**: Consume the application from another VPC, without going over the TGW
+
+#### Launch templates
+- EC2 launch templates, Streamline, simplify and standardize instance launches.
+-  Launch templates enable you to store launch parameters so that you do not have to specify them every time you launch an instance. 
+-  For example, a launch template can contain the AMI ID, instance type, and network settings that you typically use to launch instances.
+- **Target groups** is used to route requests to one or more registered targets. 
+- This is where our Auto scaling group will place EC2 instances created from our Launch template. 
+- The Network Load Balancer will send traffic to the Target group.
+- **Auto Scaling groups** are collections of Amazon EC2 instances that enable automatic scaling and fleet management features. 
+- These features help you maintain the health and availability of your applications.
+- **Network Load Balancer**:  A functions at the fourth layer of the Open Systems Interconnection (OSI) model. It can handle millions of requests per second.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
