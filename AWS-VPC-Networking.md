@@ -107,6 +107,14 @@
 - These features help you maintain the health and availability of your applications.
 - **Network Load Balancer**:  A functions at the fourth layer of the Open Systems Interconnection (OSI) model. It can handle millions of requests per second.
 
+####  Troubleshooting AWS Network Connectivity: Security Groups and NACLs
+-  Identify the Issues Preventing the Instance from Connecting to the Internet
+-  First check EC2 Instance associated security group. Check both Inbound rules  and Outbound rules
+-  Next Check Network ACL associated with Subnet of the EC2 Instance
+-  Next Check the Route Tables.
+
+![image](https://user-images.githubusercontent.com/32443900/137642967-9c6f460a-8159-4562-8d45-0d1be29d8de3.png)
+
 
 
 
