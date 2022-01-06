@@ -4,7 +4,10 @@ https://user-images.githubusercontent.com/32443900/135767631-831b2b0a-357f-4e81-
 
 ## Workshop Links 
 -  https://catalog.us-east-1.prod.workshops.aws/v2/workshops/8c9036a7-7564-434c-b558-3588754e21f5/en-US/  (best one)
--  https://ecsworkshop.com/introduction/
+-  AWS Containers Immersion Day :  https://catalog.us-east-1.prod.workshops.aws/v2/workshops/ed1a8610-c721-43be-b8e7-0f300f74684e/en-US/  
+-  ECS_Fargate_Workshop :  https://catalog.us-east-1.prod.workshops.aws/v2/workshops/1dab7316-6c7c-4a6c-bf76-d6aeeb5ad379/en-US/dev/overview
+-  -  https://ecsworkshop.com/introduction/
+-  https://workshops.aws/?tag=ECS
 -
 ---
 
