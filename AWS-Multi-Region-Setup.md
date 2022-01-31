@@ -1,3 +1,3 @@
 # Building Fault Tolerant Apps on AWS
 - DR : Disaster Recovery on AWS
-- OOR - Out-Of-Region Data Center : Typically considered part of DR. An Out-Of-Region Data Center is one which is significantly geographically distant from other Data Center used by any company.  Its Often too far to support synchronous replication.
+- OOR - Out-Of-Region Data Center : Typically considered part of DR. An Out-Of-Region Data Center is one which is significantly geographically distant from other Data Center used by any company.  Its Often too far to support synchronous replication.  
