@@ -7,7 +7,8 @@ Link -  https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
 - Code signing
 - Lambda extensions : You can use Lambda extensions to augment your Lambda functions. For example, use extensions to more easily integrate Lambda with your favorite tools for monitoring, observability, security, and governance.
 - Database access : A database proxy manages a pool of database connections and relays queries from a function.
-- File systems access : You can configure a function to mount an Amazon Elastic File System (Amazon EFS) file system to a local directory. 
+- File systems access : You can configure a function to mount an Amazon Elastic File System (Amazon EFS) file system to a local directory.   
+
 ---
 ## The Lambda function is the foundational principle of Lambda. 
 - Lambda runs instances of your function to process events. 
@@ -49,7 +50,23 @@ Link -  https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
   - Lambda provides managed resources named Hyperplane ENIs, which your Lambda function uses to connect from the Lambda VPC to an ENI (Elastic network interface) in your account VPC.
 
 ## AWS Lambda execution environment
-   
+---
+![image](https://user-images.githubusercontent.com/32443900/154792327-03ff7c11-0894-48b6-b14a-e5b2c4e68edb.png)
+---
+## Lambda execution environment lifecycle
+![image](https://user-images.githubusercontent.com/32443900/154792403-a52e1f02-943e-487f-8f32-90e8da00465d.png)
+--
+![image](https://user-images.githubusercontent.com/32443900/154792485-dee5b8b1-9e41-41fb-87b4-f0391e2001fd.png)
+---
+![image](https://user-images.githubusercontent.com/32443900/154792821-84e03e78-b08b-4326-9e2a-a9103b078ff8.png)
+--
+
+## Response codes
+- 202 – Accepted
+- 400 – Bad Request
+- 403 – Forbidden
+- 500 – Container error. Non-recoverable state. Extension should exit promptly.
+
   
   
   
