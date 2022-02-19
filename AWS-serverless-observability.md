@@ -20,3 +20,8 @@ Link - https://serverless-observability.workshop.aws/en/010_introduction.html
 - Amazon CloudWatch can load all the metrics in your account (both AWS resource metrics and application metrics that you provide) for search, graphing, and alarms.
 - Metric data is kept for 15 months, enabling you to view both up-to-the-minute data and historical data.
 - Amazon CloudWatch metrics Link - https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html 
+
+## CLOUDWATCH METRICS, ALARMS, AND DASHBOARDS
+- Application can push custom business and operational metrics to CloudWatch
+- Create alarms based on failure metrics to notify our SRE/SysOps engineers 
+- consolidate all these metrics in a single dashboard to ease monitoring tasks.
