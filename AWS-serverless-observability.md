@@ -1,5 +1,17 @@
 #  AWS Serverless Observability Workshop
-Link - https://serverless-observability.workshop.aws/en/010_introduction.html
+Link - https://catalog.us-east-1.prod.workshops.aws/workshops/31676d37-bbe9-4992-9cd1-ceae13c5116c/en-US/  
+    -  https://serverless-observability.workshop.aws/en/010_introduction.html  
+    
+ ![image](https://user-images.githubusercontent.com/32443900/154785135-6f6af5d5-9a78-4818-ba07-4eb6934efe7b.png)
+
+    
+## AWS observability functionalities on 
+- Amazon CloudWatch : provides native monitoring, logging, alarming, and dashboards
+- AWS X-Ray : tracing through 
+-  Amazon CloudWatch  and tracing through AWS X-Ray . When deployed together, they provide the 3 pillars (Metric, Logs & Traces) of an observability solution.
+- Amazon Managed Service for Prometheus : Highly available, secure, and managed monitoring for your containers
+- Amazon Managed Grafana : Scalable, secure, and highly available data visualization for your operational metrics, logs, and traces 
+- AWS Distro for OpenTelemetry (ADOT) : a secure, production-ready, AWS-supported distribution of the OpenTelemetry project.
 
 ## Three main pillars of Observability
 ###  Tracing :  
