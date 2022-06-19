@@ -5,7 +5,7 @@
 
 Running code below 
 
-
+```
 print("1 Hello World")
 
 import boto3
@@ -53,4 +53,5 @@ while 'LastEvaluatedKey' in response:
 
 print(response['Items'])
 
+```
 
