@@ -15,3 +15,29 @@ file_name = "avro_file_in_s3"
 
 # Write the DataFrame to S3 in Avro format
 df.write.format("com.databricks.spark.avro").mode("overwrite").save("s3://your-bucket-name/" + file_name)
+
+
+###################################################################################################
+
+import boto3
+from awsglue.context import GlueContext
+from awsglue.transforms import *
+from awsglue.utils import getResolvedOptions
+from awsglue.dynamicframe import DynamicFrame
+
+glueContext = GlueContext(SparkContext.getOrCreate())
+
+# Create a DynamicFrame from a DataFrame
+data = [("John", 20), ("Jane", 21), ("Jim", 22)]
+df = spark.createDataFrame(data, ["name", "age"])
+dynamic_frame = DynamicFrame.fromDF(df, glueContext, "dynamic_frame")
+
+# Specify the file name
+file_name = "avro_file_in_s3"
+
+# Write the DynamicFrame to S3 in Avro format
+glueContext.write_dynamic_frame.from_options(frame = dynamic_frame, 
+                                              connection_type = "s3", 
+                                              connection_options = {"path": "s3://your-bucket-name/" + file_name}, 
+                                              format = "avro")
+
