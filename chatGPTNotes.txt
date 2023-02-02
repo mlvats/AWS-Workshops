@@ -1,3 +1,28 @@
+# Here is an example of how you can read an Avro file from AWS S3 using AWS Glue ETL context and dynamic frame in Python:
+
+import boto3
+from awsglue.context import GlueContext
+from awsglue.transforms import *
+from awsglue.utils import getResolvedOptions
+from awsglue.dynamicframe import DynamicFrame
+
+glueContext = GlueContext(SparkContext.getOrCreate())
+
+# Specify the S3 path of the Avro file
+file_path = "s3://your-bucket-name/avro_file_in_s3"
+
+# Read the Avro file from S3
+dynamic_frame = glueContext.create_dynamic_frame.from_options("avro", {"path": file_path})
+
+# Convert the DynamicFrame to a DataFrame
+df = dynamic_frame.toDF()
+
+# Show the DataFrame
+df.show()
+
+###################################################################################################
+ 
+
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
