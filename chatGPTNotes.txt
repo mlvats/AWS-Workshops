@@ -1,0 +1,17 @@
+import sys
+from awsglue.transforms import *
+from awsglue.utils import getResolvedOptions
+from pyspark.context import SparkContext
+from awsglue.context import GlueContext
+
+# Create a Glue Context
+glueContext = GlueContext(SparkContext.getOrCreate())
+
+# Create a DataFrame
+df = glueContext.create_dataframe([(1, "John"), (2, "Jane"), (3, "Jim")], ["id", "name"])
+
+# Specify the file name
+file_name = "avro_file_in_s3"
+
+# Write the DataFrame to S3 in Avro format
+df.write.format("com.databricks.spark.avro").mode("overwrite").save("s3://your-bucket-name/" + file_name)
